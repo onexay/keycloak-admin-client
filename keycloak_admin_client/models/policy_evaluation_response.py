@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,17 +33,17 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import access_token
+    from keycloak_admin_client.models import access_token
 except ImportError:
     access_token = sys.modules[
         'openapi_client.models.access_token']
 try:
-    from openapi_client.models import decision_effect
+    from keycloak_admin_client.models import decision_effect
 except ImportError:
     decision_effect = sys.modules[
         'openapi_client.models.decision_effect']
 try:
-    from openapi_client.models import evaluation_result_representation
+    from keycloak_admin_client.models import evaluation_result_representation
 except ImportError:
     evaluation_result_representation = sys.modules[
         'openapi_client.models.evaluation_result_representation']

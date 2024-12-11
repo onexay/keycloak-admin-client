@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,17 +33,17 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import claim_representation
+    from keycloak_admin_client.models import claim_representation
 except ImportError:
     claim_representation = sys.modules[
         'openapi_client.models.claim_representation']
 try:
-    from openapi_client.models import protocol_mapper_representation
+    from keycloak_admin_client.models import protocol_mapper_representation
 except ImportError:
     protocol_mapper_representation = sys.modules[
         'openapi_client.models.protocol_mapper_representation']
 try:
-    from openapi_client.models import resource_server_representation
+    from keycloak_admin_client.models import resource_server_representation
 except ImportError:
     resource_server_representation = sys.modules[
         'openapi_client.models.resource_server_representation']

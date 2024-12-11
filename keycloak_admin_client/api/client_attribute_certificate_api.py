@@ -18,12 +18,12 @@ import sys  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from openapi_client.api_client import ApiClient
-from openapi_client.exceptions import (
+from keycloak_admin_client.api_client import ApiClient
+from keycloak_admin_client.exceptions import (
     ApiTypeError,
     ApiValueError
 )
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     check_allowed_values,
     check_validations,
     date,
@@ -34,8 +34,8 @@ from openapi_client.model_utils import (  # noqa: F401
     str,
     validate_and_convert_types
 )
-from openapi_client.models import key_store_config
-from openapi_client.models import certificate_representation
+from keycloak_admin_client.models import key_store_config
+from keycloak_admin_client.models import certificate_representation
 
 
 class ClientAttributeCertificateApi(object):

@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,22 +33,22 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import access
+    from keycloak_admin_client.models import access
 except ImportError:
     access = sys.modules[
         'openapi_client.models.access']
 try:
-    from openapi_client.models import address_claim_set
+    from keycloak_admin_client.models import address_claim_set
 except ImportError:
     address_claim_set = sys.modules[
         'openapi_client.models.address_claim_set']
 try:
-    from openapi_client.models import authorization
+    from keycloak_admin_client.models import authorization
 except ImportError:
     authorization = sys.modules[
         'openapi_client.models.authorization']
 try:
-    from openapi_client.models import confirmation
+    from keycloak_admin_client.models import confirmation
 except ImportError:
     confirmation = sys.modules[
         'openapi_client.models.confirmation']

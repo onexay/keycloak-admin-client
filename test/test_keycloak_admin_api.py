@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.keycloak_admin_api import KeycloakAdminApi  # noqa: E501
-from openapi_client.rest import ApiException
+import keycloak_admin_client
+from keycloak_admin_client.api.keycloak_admin_api import KeycloakAdminApi  # noqa: E501
+from keycloak_admin_client.rest import ApiException
 
 
 class TestKeycloakAdminApi(unittest.TestCase):
     """KeycloakAdminApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.keycloak_admin_api.KeycloakAdminApi()  # noqa: E501
+        self.api = keycloak_admin_client.api.keycloak_admin_api.KeycloakAdminApi()  # noqa: E501
 
     def tearDown(self):
         pass

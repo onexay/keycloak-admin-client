@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,12 +33,12 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import category
+    from keycloak_admin_client.models import category
 except ImportError:
     category = sys.modules[
         'openapi_client.models.category']
 try:
-    from openapi_client.models import tag
+    from keycloak_admin_client.models import tag
 except ImportError:
     tag = sys.modules[
         'openapi_client.models.tag']

@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,117 +33,117 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import application_representation
+    from keycloak_admin_client.models import application_representation
 except ImportError:
     application_representation = sys.modules[
         'openapi_client.models.application_representation']
 try:
-    from openapi_client.models import authentication_flow_representation
+    from keycloak_admin_client.models import authentication_flow_representation
 except ImportError:
     authentication_flow_representation = sys.modules[
         'openapi_client.models.authentication_flow_representation']
 try:
-    from openapi_client.models import authenticator_config_representation
+    from keycloak_admin_client.models import authenticator_config_representation
 except ImportError:
     authenticator_config_representation = sys.modules[
         'openapi_client.models.authenticator_config_representation']
 try:
-    from openapi_client.models import brute_force_strategy
+    from keycloak_admin_client.models import brute_force_strategy
 except ImportError:
     brute_force_strategy = sys.modules[
         'openapi_client.models.brute_force_strategy']
 try:
-    from openapi_client.models import client_policies_representation
+    from keycloak_admin_client.models import client_policies_representation
 except ImportError:
     client_policies_representation = sys.modules[
         'openapi_client.models.client_policies_representation']
 try:
-    from openapi_client.models import client_profiles_representation
+    from keycloak_admin_client.models import client_profiles_representation
 except ImportError:
     client_profiles_representation = sys.modules[
         'openapi_client.models.client_profiles_representation']
 try:
-    from openapi_client.models import client_representation
+    from keycloak_admin_client.models import client_representation
 except ImportError:
     client_representation = sys.modules[
         'openapi_client.models.client_representation']
 try:
-    from openapi_client.models import client_scope_representation
+    from keycloak_admin_client.models import client_scope_representation
 except ImportError:
     client_scope_representation = sys.modules[
         'openapi_client.models.client_scope_representation']
 try:
-    from openapi_client.models import client_template_representation
+    from keycloak_admin_client.models import client_template_representation
 except ImportError:
     client_template_representation = sys.modules[
         'openapi_client.models.client_template_representation']
 try:
-    from openapi_client.models import group_representation
+    from keycloak_admin_client.models import group_representation
 except ImportError:
     group_representation = sys.modules[
         'openapi_client.models.group_representation']
 try:
-    from openapi_client.models import identity_provider_mapper_representation
+    from keycloak_admin_client.models import identity_provider_mapper_representation
 except ImportError:
     identity_provider_mapper_representation = sys.modules[
         'openapi_client.models.identity_provider_mapper_representation']
 try:
-    from openapi_client.models import identity_provider_representation
+    from keycloak_admin_client.models import identity_provider_representation
 except ImportError:
     identity_provider_representation = sys.modules[
         'openapi_client.models.identity_provider_representation']
 try:
-    from openapi_client.models import multivalued_hash_map_string_component_export_representation
+    from keycloak_admin_client.models import multivalued_hash_map_string_component_export_representation
 except ImportError:
     multivalued_hash_map_string_component_export_representation = sys.modules[
         'openapi_client.models.multivalued_hash_map_string_component_export_representation']
 try:
-    from openapi_client.models import o_auth_client_representation
+    from keycloak_admin_client.models import o_auth_client_representation
 except ImportError:
     o_auth_client_representation = sys.modules[
         'openapi_client.models.o_auth_client_representation']
 try:
-    from openapi_client.models import organization_representation
+    from keycloak_admin_client.models import organization_representation
 except ImportError:
     organization_representation = sys.modules[
         'openapi_client.models.organization_representation']
 try:
-    from openapi_client.models import protocol_mapper_representation
+    from keycloak_admin_client.models import protocol_mapper_representation
 except ImportError:
     protocol_mapper_representation = sys.modules[
         'openapi_client.models.protocol_mapper_representation']
 try:
-    from openapi_client.models import required_action_provider_representation
+    from keycloak_admin_client.models import required_action_provider_representation
 except ImportError:
     required_action_provider_representation = sys.modules[
         'openapi_client.models.required_action_provider_representation']
 try:
-    from openapi_client.models import role_representation
+    from keycloak_admin_client.models import role_representation
 except ImportError:
     role_representation = sys.modules[
         'openapi_client.models.role_representation']
 try:
-    from openapi_client.models import roles_representation
+    from keycloak_admin_client.models import roles_representation
 except ImportError:
     roles_representation = sys.modules[
         'openapi_client.models.roles_representation']
 try:
-    from openapi_client.models import scope_mapping_representation
+    from keycloak_admin_client.models import scope_mapping_representation
 except ImportError:
     scope_mapping_representation = sys.modules[
         'openapi_client.models.scope_mapping_representation']
 try:
-    from openapi_client.models import user_federation_mapper_representation
+    from keycloak_admin_client.models import user_federation_mapper_representation
 except ImportError:
     user_federation_mapper_representation = sys.modules[
         'openapi_client.models.user_federation_mapper_representation']
 try:
-    from openapi_client.models import user_federation_provider_representation
+    from keycloak_admin_client.models import user_federation_provider_representation
 except ImportError:
     user_federation_provider_representation = sys.modules[
         'openapi_client.models.user_federation_provider_representation']
 try:
-    from openapi_client.models import user_representation
+    from keycloak_admin_client.models import user_representation
 except ImportError:
     user_representation = sys.modules[
         'openapi_client.models.user_representation']

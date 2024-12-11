@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
-from openapi_client.api.client_attribute_certificate_api import ClientAttributeCertificateApi  # noqa: E501
-from openapi_client.rest import ApiException
+import keycloak_admin_client
+from keycloak_admin_client.api.client_attribute_certificate_api import ClientAttributeCertificateApi  # noqa: E501
+from keycloak_admin_client.rest import ApiException
 
 
 class TestClientAttributeCertificateApi(unittest.TestCase):
     """ClientAttributeCertificateApi unit test stubs"""
 
     def setUp(self):
-        self.api = openapi_client.api.client_attribute_certificate_api.ClientAttributeCertificateApi()  # noqa: E501
+        self.api = keycloak_admin_client.api.client_attribute_certificate_api.ClientAttributeCertificateApi()  # noqa: E501
 
     def tearDown(self):
         pass

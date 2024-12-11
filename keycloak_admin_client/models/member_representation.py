@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,32 +33,32 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import credential_representation
+    from keycloak_admin_client.models import credential_representation
 except ImportError:
     credential_representation = sys.modules[
         'openapi_client.models.credential_representation']
 try:
-    from openapi_client.models import federated_identity_representation
+    from keycloak_admin_client.models import federated_identity_representation
 except ImportError:
     federated_identity_representation = sys.modules[
         'openapi_client.models.federated_identity_representation']
 try:
-    from openapi_client.models import membership_type
+    from keycloak_admin_client.models import membership_type
 except ImportError:
     membership_type = sys.modules[
         'openapi_client.models.membership_type']
 try:
-    from openapi_client.models import social_link_representation
+    from keycloak_admin_client.models import social_link_representation
 except ImportError:
     social_link_representation = sys.modules[
         'openapi_client.models.social_link_representation']
 try:
-    from openapi_client.models import user_consent_representation
+    from keycloak_admin_client.models import user_consent_representation
 except ImportError:
     user_consent_representation = sys.modules[
         'openapi_client.models.user_consent_representation']
 try:
-    from openapi_client.models import user_profile_metadata
+    from keycloak_admin_client.models import user_profile_metadata
 except ImportError:
     user_profile_metadata = sys.modules[
         'openapi_client.models.user_profile_metadata']

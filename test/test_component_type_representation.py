@@ -14,7 +14,7 @@ from __future__ import absolute_import
 
 import unittest
 
-import openapi_client
+import keycloak_admin_client
 
 
 class TestComponentTypeRepresentation(unittest.TestCase):

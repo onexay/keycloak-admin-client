@@ -17,7 +17,7 @@ import sys  # noqa: F401
 import six  # noqa: F401
 import nulltype  # noqa: F401
 
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
@@ -33,17 +33,17 @@ from openapi_client.model_utils import (  # noqa: F401
     validate_get_composed_info,
 )
 try:
-    from openapi_client.models import up_attribute_permissions
+    from keycloak_admin_client.models import up_attribute_permissions
 except ImportError:
     up_attribute_permissions = sys.modules[
         'openapi_client.models.up_attribute_permissions']
 try:
-    from openapi_client.models import up_attribute_required
+    from keycloak_admin_client.models import up_attribute_required
 except ImportError:
     up_attribute_required = sys.modules[
         'openapi_client.models.up_attribute_required']
 try:
-    from openapi_client.models import up_attribute_selector
+    from keycloak_admin_client.models import up_attribute_selector
 except ImportError:
     up_attribute_selector = sys.modules[
         'openapi_client.models.up_attribute_selector']

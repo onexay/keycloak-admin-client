@@ -18,12 +18,12 @@ import sys  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from openapi_client.api_client import ApiClient
-from openapi_client.exceptions import (
+from keycloak_admin_client.api_client import ApiClient
+from keycloak_admin_client.exceptions import (
     ApiTypeError,
     ApiValueError
 )
-from openapi_client.model_utils import (  # noqa: F401
+from keycloak_admin_client.model_utils import (  # noqa: F401
     check_allowed_values,
     check_validations,
     date,
@@ -34,17 +34,17 @@ from openapi_client.model_utils import (  # noqa: F401
     str,
     validate_and_convert_types
 )
-from openapi_client.models import credential_representation
-from openapi_client.models import client_scope_representation
-from openapi_client.models import access_token
-from openapi_client.models import id_token
-from openapi_client.models import protocol_mapper_evaluation_representation
-from openapi_client.models import role_representation
-from openapi_client.models import client_representation
-from openapi_client.models import management_permission_reference
-from openapi_client.models import user_session_representation
-from openapi_client.models import global_request_result
-from openapi_client.models import user_representation
+from keycloak_admin_client.models import credential_representation
+from keycloak_admin_client.models import client_scope_representation
+from keycloak_admin_client.models import access_token
+from keycloak_admin_client.models import id_token
+from keycloak_admin_client.models import protocol_mapper_evaluation_representation
+from keycloak_admin_client.models import role_representation
+from keycloak_admin_client.models import client_representation
+from keycloak_admin_client.models import management_permission_reference
+from keycloak_admin_client.models import user_session_representation
+from keycloak_admin_client.models import global_request_result
+from keycloak_admin_client.models import user_representation
 
 
 class KeycloakAdminClientsApi(object):

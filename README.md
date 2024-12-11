@@ -23,7 +23,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import keycloak_admin_client
 ```
 
 ### Setuptools
@@ -37,7 +37,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import keycloak_admin_client
 ```
 
 ## Getting Started
@@ -48,28 +48,28 @@ Please follow the [installation procedure](#installation--usage) and then run th
 from __future__ import print_function
 
 import time
-import openapi_client
+import keycloak_admin_client
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = keycloak_admin_client.Configuration(
     host = "http://localhost"
 )
 
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with keycloak_admin_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AttackDetectionApi(api_client)
+    api_instance = keycloak_admin_client.AttackDetectionApi(api_client)
     realm = 'realm_example' # str | 
 
     try:
         # Clear any user login failures for all users This can release temporary disabled users
         api_response = api_instance.admin_realms_realm_attack_detection_brute_force_users_delete(realm)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except keycloak_admin_client.ApiException as e:
         print("Exception when calling AttackDetectionApi->admin_realms_realm_attack_detection_brute_force_users_delete: %s\n" % e)
     
 ```

@@ -20,7 +20,7 @@ import tempfile
 from dateutil.parser import parse
 import six
 
-from openapi_client.exceptions import (
+from keycloak_admin_client.exceptions import (
     ApiKeyError,
     ApiTypeError,
     ApiValueError,

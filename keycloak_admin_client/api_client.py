@@ -21,10 +21,10 @@ import re
 import six
 from six.moves.urllib.parse import quote
 
-from openapi_client import rest
-from openapi_client.configuration import Configuration
-from openapi_client.exceptions import ApiValueError, ApiException
-from openapi_client.model_utils import (
+from keycloak_admin_client import rest
+from keycloak_admin_client.configuration import Configuration
+from keycloak_admin_client.exceptions import ApiValueError, ApiException
+from keycloak_admin_client.model_utils import (
     ModelNormal,
     ModelSimple,
     ModelComposed,
