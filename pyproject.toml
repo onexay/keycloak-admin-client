@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "keycloak-admin-client"
+version = "26.0.7"
+description = "Keycloak IAM Admin Python Client"
+authors = ["Akshay Ranjan <akshay.ranjan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+certifi = "^2024.8.30"
+urllib3 = "^2.2.3"
+nulltype = "^2.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
