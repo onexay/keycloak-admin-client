@@ -48,3 +48,8 @@ For APIs, I recommend [Mantelo](https://mantelo.readthedocs.io/en/latest/). Sinc
 
 I intend to keep the library versioning synced with the latest stable **Keycloak** release.
 
+## Installing
+
+* `pip install keycloak-admin-client`
+* `poetry add keycloak-admin-client`
+
