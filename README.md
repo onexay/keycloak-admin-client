@@ -35,7 +35,7 @@ For APIs, I recommend [Mantelo](https://mantelo.readthedocs.io/en/latest/). Sinc
                 domains=[OrganizationDomainRepresentation(name=f"{schema.name.replace(' ', '-').lower()}.org", verified=False)],
                 enabled=schema.active,
                 attributes={"tax_id": [schema.tax_id], "address": [schema.address]},
-            ).model_dump(exclude_unset=True, use_alias=True)
+            ).model_dump(exclude_unset=True, by_alias=True)
     ```
 
 3. Transform python dictionaries to model representations using python dictionary unpacking operator `**`. *Mantelo* client returns python dictionaries for read operations.
