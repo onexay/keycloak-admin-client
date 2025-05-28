@@ -1,3 +1,13 @@
+# Command
+#
+# datamodel-codegen --url https://www.keycloak.org/docs-api/latest/rest-api/openapi.yaml \
+#                   --snake-case-field \
+#                   --use-generic-container-types \
+#                   --capitalise-enum-members \
+#                   --collapse-root-models \
+#                   --output keycloak_admin_client/models.py
+#
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
