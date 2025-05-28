@@ -22,7 +22,23 @@ For APIs, I recommend [Mantelo](https://mantelo.readthedocs.io/en/latest/). Sinc
             ).model_dump(exclude_unset=True)
     ```
 
-2. Transform python dictionaries to model representations using python dictionary unpacking operator `**`. *Mantelo* client returns python dictionaries for read operations.
+2. Models use `snake-case` attribute names for applications; but for Keycloak APIs, users should **aliases** to ensure actual Keyclock API attribute names are used.
+
+    ```python
+    class TenantAdapter:
+        @classmethod
+        def model_new(cls, schema: TenantReqSchema) -> Any:
+            """Convert `TenantReqSchema` to `Serializable`."""
+            return OrganizationRepresentation(
+                name=schema.name,
+                alias=schema.name.replace(" ", "_"),
+                domains=[OrganizationDomainRepresentation(name=f"{schema.name.replace(' ', '-').lower()}.org", verified=False)],
+                enabled=schema.active,
+                attributes={"tax_id": [schema.tax_id], "address": [schema.address]},
+            ).model_dump(exclude_unset=True, use_alias=True)
+    ```
+
+3. Transform python dictionaries to model representations using python dictionary unpacking operator `**`. *Mantelo* client returns python dictionaries for read operations.
 
     ```python
     class TenantAdapter:

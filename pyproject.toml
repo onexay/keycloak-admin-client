@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "keycloak-admin-client"
-version = "26.0.8"
+version = "26.2.4"
 description = "Keycloak IAM Admin Pydantic Models"
 authors = ["Akshay Ranjan <akshay.ranjan@gmail.com>"]
 license = "MIT"
